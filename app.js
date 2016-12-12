@@ -6,6 +6,7 @@ app.people = [
   { firstname: "Roberto", surname: "O'Maley", age: "666", taille: "1m66" }
 ];
 const ready = function() {
+  const people = app.people;
   var docfrag = document.createDocumentFragment();
   const tbody = document.querySelector("tbody");
 const thead = document.querySelector("thead");
@@ -19,7 +20,7 @@ docfrag.appendChild(tr);
   }
 thead.appendChild(docfrag);
 tbody.appendChild(docfrag);
-}
+}/*
 var up_forms = document.getElementsByName("prenom");
 function Info()
 {
@@ -34,7 +35,7 @@ object.addEventListener("", myScript);
 
 
 
-
+*/
 
 
 
