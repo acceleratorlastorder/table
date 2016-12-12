@@ -1,12 +1,11 @@
-
+const app = {};
+app.people = [
+  { firstname: "Landry", surname: "O'Hara", age: "29", taille: "1m50" },
+  { firstname: "Sharon", surname: "O'Neil", age: "28", taille: "1m80" },
+  { firstname: "Emerson", surname: "O'Connell", age: "25", taille: "1m95" },
+  { firstname: "Roberto", surname: "O'Maley", age: "666", taille: "1m66" }
+];
 const ready = function() {
-  // Loading
-  const people = [
-    { firstname: "Landry", surname: "O'Hara", age: "29", taille: "1m50" },
-    { firstname: "Sharon", surname: "O'Neil", age: "28", taille: "1m80" },
-    { firstname: "Emerson", surname: "O'Connell", age: "25", taille: "1m95" },
-    { firstname: "Roberto", surname: "O'Maley", age: "666", taille: "1m66" }
-  ];
   var docfrag = document.createDocumentFragment();
   const tbody = document.querySelector("tbody");
 const thead = document.querySelector("thead");
@@ -21,4 +20,23 @@ docfrag.appendChild(tr);
 thead.appendChild(docfrag);
 tbody.appendChild(docfrag);
 }
+var up_forms = document.getElementsByName("prenom");
+function Info()
+{
+  console.log(up_forms[0].tagName);
+     window.alert(up_forms);
+}
+document.getElementById("surname").addEventListener("submit", function(e)){
+  e.preventDefault();
+}
+object.addEventListener("", myScript);
+
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", ready);

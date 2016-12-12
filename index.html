@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
+</head>
+
+<body>
     <table>
-      <thead>
-      </thead>
-      <tbody>
-      </tbody>
+        <thead>
+        </thead>
+        <tbody>
+        </tbody>
     </table>
-    <form method="post" action="traitement.php">
-        <p>
-            <label>Votre pseudo</label> : <input type="text" name="pseudo" />
-        </p>
+    <form method="post" action="">
+        <div><label>Votre prénom</label> : <input type="text" name="surname" /></div>
+        <div><label>Votre nom</label> : <input type="text" name="firstname" /></div>
+        <div><label>Votre âge</label> : <input type="text" name="age" /></div>
+        <div><label>Votre taille</label> : <input type="text" name="taille" /></div>
+        <button id="button" type="submit" onclick="return false;">Envoyer votre message</button>
     </form>
     <script src="app.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>
