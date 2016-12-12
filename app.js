@@ -18,9 +18,7 @@ docfrag.appendChild(tr);
     tr.innerHTML = `<td>${people[i].surname}</td><td>${people[i].firstname}</td><td>${people[i].age}</td><td>${people[i].taille}</td>`;
     docfrag.appendChild(tr);
   }
-thead.appendChild(docfrag)
-tbody.appendChild(docfrag)
-
+thead.appendChild(docfrag);
+tbody.appendChild(docfrag);
 }
-
 document.addEventListener("DOMContentLoaded", ready);
